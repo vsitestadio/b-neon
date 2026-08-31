@@ -192,3 +192,42 @@ header img{
 .sample-item.playing {
     border: 3px solid #ffffff;
 }
+@media screen and (max-width: 768px) {
+header{
+    height: 50px;
+}
+header img {
+    width: 150px;
+    position: absolute;
+    left: 30px;
+}
+.header-text {
+    column-gap: 20px;
+    font-size: 15px;
+}
+.section img{
+    height: 70px;
+    margin: 50px auto 0px;
+}
+.main {
+    margin-top: 100px;
+}
+.main-container {
+    width: 100%;
+}
+.main-text {
+    width: 90%;
+}
+.address {
+    width: 150px;
+    margin-right: 25px;
+    font-size: 15px;
+}
+
+.main-address {
+    width: 90%;
+}
+.voice-container {
+    width: 100%;
+}
+}
