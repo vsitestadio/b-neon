@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-image:url(../img/background-va.png);
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    background-size: cover;
+}
+ul,li,ol,p,h1,h2,h3{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    width:100%;
+}
+header{
+    display: flex;
+    background-color: #f1caff;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+header img{
+    width: 350px;
+    position:absolute;
+    left: 30px;
+}
+.header-text{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 50px;
+    column-gap: 50px;
+    font-size: 25px;
+}
+.header-text p{
+    border-bottom: 2px solid #000;
+}
+.main{
+    margin-top: 200px;
+}
+.section img{
+    height: 100px;
+    width: auto;
+    display: flex;
+    margin: 0px auto;
+}
+.main-container {
+    width: 70%;
+    margin: 50px auto 100px;
+    padding: 35px 60px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* 「宅録声優のお仕事募集中！」 */
+.main-container h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* 説明文 */
+.main-text {
+    width: 80%;
+    margin: 0 auto 70px;
+
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.main-text li::before {
+    content: "・";
+}
+
+
+/* メールアドレスなど */
+.main-address {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-address li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* 左側の紫色の部分 */
+.address {
+    width: 230px;
+    padding: 8px 15px;
+    margin-right: 35px;
+    background-color: #BF8AFF;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+
+/* 右側のアドレス */
+.address-li {
+    font-size: 22px;
+}
+
+.voice-container {
+    width: 70%;
+    margin: 50px auto 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+}
+
+.voice-category {
+    margin-bottom: 30px;
+}
+.voice-category:last-child{
+    margin-bottom: 0px;
+}
+
+.voice-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.sample-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sample-item {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    background-color: #a966ff;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sample-item:hover {
+    transform: scale(1.05);
+}
+
+.sample-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.spectrum {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 70px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sample-item.playing .spectrum {
+    opacity: 1;
+}
+
+.sample-item.playing {
+    border: 3px solid #ffffff;
+}
