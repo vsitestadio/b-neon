@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f4caff;
+    background-size: cover;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+}
+p {
+    font-size: 40px;
+    margin: 0 auto 30px;
+}
+.main-btn{
+    display: flex;
+}
+.btn {
+    position: relative;
+    flex: 1;
+
+    /* はみ出した画像を隠す */
+    overflow: hidden;
+
+    border: 5px solid #000;
+    background-color: #fff;
+
+    transition: border-color 0.5s ease;
+}
+.btn img {
+    width: 100%;
+    background: #fff;
+    display: block;
+    transition: transform 0.5s ease;
+}
+/* ホバー */
+.btn:hover {
+    border-color: #c871ff;
+}
+.btn:hover img {
+    transform: scale(1.1);
+}
+/* 白フィルター */
+.filter {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0);
+
+    transition: background-color 0.5s ease;
+}
+.btn p{
+    color: #fff;
+    background-color: #d060ffd6;
+}
+/* 真ん中の文字 */
+.btn-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+/* ホバー：白フィルター */
+.btn:hover .filter {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+/* ホバー：文字表示 */
+.btn:hover .btn-text {
+    opacity: 1;
+    cursor: pointer;
+}
