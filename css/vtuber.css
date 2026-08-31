@@ -62,8 +62,8 @@ header img{
     text-align: center;
 }
 .section img{
-    height: 100px;
     width: auto;
+    height: 100px;
     display: flex;
     margin: 100px auto 0px;
 }
@@ -132,23 +132,16 @@ header img{
 /* 白いフィルター */
 .white-filter {
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: 0;
     aspect-ratio: 1;
-
     border-radius: 50%;
-
     /* 円の外側を白くする */
     box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.4);
-
     transition: width 1s ease;
-
     z-index: 1;
-
     pointer-events: none;
 }
 
@@ -199,4 +192,58 @@ header img{
 }
 .link-list img{
     width: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+header{
+    height: 50px;
+}
+header img {
+    width: 150px;
+    position: absolute;
+    left: 30px;
+}
+.header-text {
+    column-gap: 20px;
+    font-size: 15px;
+}
+.main-text {
+    width: 80vw;
+}
+.section img{
+    height: 70px;
+    margin: 50px auto 0px;
+}
+.profile-image{
+    width: 90%;
+}
+.character {
+    height: 50vw;
+    right: 10vw;
+}
+.schejule-tytle{
+    font-size: 30px;
+}
+.sc-thumbnail {
+    font-size: 20px;
+}
+.st-list li .btn {
+    width: 50px;
+}
+.st-list li a:hover .btn {
+    width: 70px;
+}
+.st ul {
+    margin-bottom: 20px;
+}
+.st-list {
+    margin: 30px auto 0px;
+}
+.st-list .text {
+    width: 80vw;
+    padding: 30px 0px;
+}
+.link-list img {
+    width: 15vw;
+}
 }

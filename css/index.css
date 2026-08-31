@@ -95,3 +95,45 @@ p {
     opacity: 1;
     cursor: pointer;
 }
+
+/* スマホ・タブレット：768px以下 */
+@media screen and (max-width: 768px) {
+
+    .main {
+        width: 90vw;
+        height: auto;
+        min-height: 100vh;
+        padding: 50px 0;
+    }
+
+    p {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .main-btn {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    /* スマホでは最初から文字を表示 */
+    .btn-text {
+        opacity: 1;
+        font-size: 32px;
+    }
+
+    /* スマホでは最初から少し白フィルターを表示 */
+    .filter {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* スマホではhover拡大をしない */
+    .btn:hover img {
+        transform: none;
+    }
+}
