@@ -227,14 +227,20 @@ header img {
 .sc-thumbnail {
     font-size: 20px;
 }
+.st-list {
+    width: 100%;
+    flex-direction: column;
+}
 .st-list li .btn {
-    width: 50px;
+    width: 90px;
 }
 .st-list li a:hover .btn {
-    width: 70px;
+    width: 110px;
 }
 .st ul {
-    margin-bottom: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        width: 70%;
 }
 .st-list {
     margin: 30px auto 0px;
@@ -245,5 +251,51 @@ header img {
 }
 .link-list img {
     width: 15vw;
+}
+.list-item{
+    width: 70%;
+    margin: 0 auto;
+}
+.white-filter {
+    display: none;
+}
+}
+@media screen and (max-width: 500px) {
+header img {
+    width: 130px;
+    left: 10px;
+}
+.header-text {
+    font-size: 12px;
+    margin-right: 10px;
+    column-gap: 10px;
+}
+.section img{
+    height: 50px;
+    margin: 30px auto 0px;
+}
+.st ul {
+        width: 100%;
+}
+.st-list li .btn {
+    width: 50px;
+}
+.st-list li a:hover .btn {
+    width: 70px;
+}
+.schejule-tytle{
+    font-size: 25px;
+}
+.sc-thumbnail {
+    font-size: 15px;
+}
+.st-list .text {
+    padding: 10px 0px;
+}
+.link-list {
+    gap: 20px;
+}
+.link-list img {
+    width: 20vw;
 }
 }
