@@ -22,6 +22,16 @@ a{
     margin: auto;
     justify-content: center;
 }
+span img{
+    width: clamp(9.375rem, -1.7361rem + 23.1481vw, 15.625rem);
+    display: flex;
+}
+.title p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.5625rem, -0.1042rem + 3.4722vw, 2.5rem);
+}
 p {
     font-size: 40px;
     margin: 0 auto 30px;
@@ -98,11 +108,16 @@ p {
     min-height: 100vh;
     padding: 50px 0;
 }
-
 p {
     font-size: clamp(0.9375rem, 0.3411rem + 2.5445vw, 1.5625rem);
     margin-bottom: 20px;
     text-align: center;
+}
+span img{
+    width: clamp(6.25rem, 0.4198rem + 18.6567vw, 9.375rem);
+}
+.title p {
+    font-size: clamp(1.25rem, 0.667rem + 1.8657vw, 1.5625rem);
 }
 
 .main-btn {
@@ -130,5 +145,13 @@ p {
     /* スマホではhover拡大をしない */
 .btn:hover img {
     transform: none;
+}
+@media screen and (max-width: 500px) {
+span img{
+    width: clamp(5rem, 1.4423rem + 15.3846vw, 6.25rem);
+}
+.title p {
+    font-size: clamp(0.9375rem, 0.0481rem + 3.8462vw, 1.25rem);
+}
 }
 }
