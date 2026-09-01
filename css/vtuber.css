@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family: Arial, "Helvetica Neue", sans-serif;
     background-image:url(../img/background-vt.png);
     top: 0px;
     left: 0px;
@@ -43,6 +43,7 @@ header img{
     margin-right: 50px;
     column-gap: 50px;
     font-size: 25px;
+    font-weight: 600;
 }
 .header-text p{
     border-bottom: 2px solid #000;
@@ -107,10 +108,11 @@ header img{
 .st ul{
     margin-bottom: 50px;
 }
-.sc-thumbnail{
+.sc-thumbnail {
     font-size: 25px;
     margin: 10px 0px 0px;
     padding-left: 20px;
+    font-weight: 600;
 }
 .st-list{
     display: flex;
@@ -208,6 +210,7 @@ ul.link-list li {
 .link-list p {
     text-align: center;
     margin-top: 10px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
@@ -298,7 +301,7 @@ header img {
     width: 90%;
 }
 .st-list li .btn {
-    width: 50px;
+    width: 80px;
 }
 .st-list li a:hover .btn {
     width: 70px;
