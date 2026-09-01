@@ -240,7 +240,7 @@ header img {
 .st ul {
         margin-bottom: 20px;
         flex-direction: column;
-        width: 70%;
+        width: 100%;
 }
 .st-list {
     margin: 30px auto 0px;
