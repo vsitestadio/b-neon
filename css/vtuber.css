@@ -317,11 +317,11 @@ header img {
     padding: 10px 0px;
 }
 .link-list {
-    column-gap: 30px;
+    column-gap: 20px;
     row-gap: 20px;
 }
 ul.link-list li {
-    width: 100px;
+    width: 110px;
     padding: 10px;
 }
 .link-list p {

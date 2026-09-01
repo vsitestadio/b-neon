@@ -309,6 +309,17 @@ header img {
 .sample-list {
     justify-content: center;
 }
+.folio-list {
+    margin: 30px auto 100px;
+}
+ul.folio-list li {
+    width: 150px;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+.folio-list p {
+    font-size: 15px;
+}
 .link-list {
     margin: 30px auto 100px;
 }
@@ -357,18 +368,22 @@ header img {
     font-size: 10px;
 }
 .link-list {
-    column-gap: 30px;
+    column-gap: 20px;
     row-gap: 20px;
 }
 ul.link-list li {
-    width: 100px;
+    width: 110px;
     padding: 10px;
 }
 .link-list p {
     font-size: 10px;
 }
+.folio-list {
+    column-gap: 20px;
+    row-gap: 20px;
+}
 ul.folio-list li {
-    width: 100px;
+    width: 110px;
     padding: 10px;
     border-radius: 20px;
 }
