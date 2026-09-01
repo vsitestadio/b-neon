@@ -56,20 +56,17 @@ p {
 /* 白フィルター */
 .filter {
     position: absolute;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background-color: rgba(255, 255, 255, 0);
-
     transition: background-color 0.5s ease;
 }
-.btn p{
+.btn p {
     color: #fff;
     background-color: #d060ffd6;
+    padding: 5px;
 }
 /* 真ん中の文字 */
 .btn-text {
@@ -79,7 +76,7 @@ p {
     transform: translate(-50%, -50%);
     font-size: 50px;
     font-weight: bold;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s ease;
     z-index: 2;
     width: 100%;
@@ -88,11 +85,6 @@ p {
 /* ホバー：白フィルター */
 .btn:hover .filter {
     background-color: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-}
-/* ホバー：文字表示 */
-.btn:hover .btn-text {
-    opacity: 1;
     cursor: pointer;
 }
 
@@ -106,7 +98,7 @@ p {
 }
 
 p {
-    font-size: 28px;
+    font-size: clamp(0.9375rem, 0.3411rem + 2.5445vw, 1.5625rem);
     margin-bottom: 20px;
     text-align: center;
 }
@@ -117,8 +109,10 @@ p {
 }
 
 .btn {
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
+
 
     /* スマホでは最初から文字を表示 */
 .btn-text {
