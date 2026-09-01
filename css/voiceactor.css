@@ -361,7 +361,18 @@ header img {
     row-gap: 20px;
 }
 ul.link-list li {
-    width: 150px;
+    width: 100px;
     padding: 10px;
+}
+.link-list p {
+    font-size: 10px;
+}
+ul.folio-list li {
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.folio-list p {
+    font-size: 10px;
 }
 }

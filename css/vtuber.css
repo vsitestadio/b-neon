@@ -235,10 +235,14 @@ header img {
 }
 .profile-image{
     width: 90%;
+    margin: 30px auto 0px;
 }
 .character {
     height: 50vw;
     right: 10vw;
+}
+.schedule-container {
+    margin-top: 30px;
 }
 .schejule-tytle{
     font-size: 30px;
@@ -298,13 +302,10 @@ header img {
     margin: 30px auto 0px;
 }
 .st ul {
-    width: 90%;
+    width: 70%;
 }
 .st-list li .btn {
     width: 80px;
-}
-.st-list li a:hover .btn {
-    width: 70px;
 }
 .schejule-tytle{
     font-size: 25px;
@@ -320,7 +321,10 @@ header img {
     row-gap: 20px;
 }
 ul.link-list li {
-    width: 150px;
+    width: 100px;
     padding: 10px;
+}
+.link-list p {
+    font-size: 10px;
 }
 }
