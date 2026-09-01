@@ -25,6 +25,7 @@ a{
 p {
     font-size: 40px;
     margin: 0 auto 30px;
+    font-weight: 600;
 }
 .main-btn{
     display: flex;
