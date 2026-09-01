@@ -26,6 +26,12 @@ span img{
     width: clamp(9.375rem, -1.7361rem + 23.1481vw, 15.625rem);
     display: flex;
 }
+#title1{
+    display: block;
+}
+#title2{
+    display: none;
+}
 .title p {
     display: flex;
     justify-content: center;
@@ -108,9 +114,15 @@ p {
     min-height: 100vh;
     padding: 50px 0;
 }
+#title1{
+    display: none;
+}
+#title2{
+    display: block;
+}
 p {
     font-size: clamp(0.9375rem, 0.3411rem + 2.5445vw, 1.5625rem);
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: center;
 }
 span img{
@@ -147,6 +159,13 @@ span img{
     transform: none;
 }
 @media screen and (max-width: 500px) {
+
+.main {
+    width: 80vw;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 50px 0;
+}
 span img{
     width: clamp(5rem, 1.4423rem + 15.3846vw, 6.25rem);
 }
