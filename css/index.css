@@ -15,12 +15,17 @@ a{
     color: #000;
 }
 .main {
-    display: flex;
-    flex-direction: column;
     width: 70vw;
-    height: 100vh;
-    margin: auto;
-    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center; /* 縦中央 */
+}
+
+.contents {
+    margin: auto 0;
+    width: 100%;
 }
 span img{
     width: clamp(9.375rem, -1.7361rem + 23.1481vw, 15.625rem);
