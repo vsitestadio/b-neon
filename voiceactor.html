@@ -12,20 +12,45 @@
 
     <!-- ヘッダー -->
     <header>
-        <a href="index.html">
-            <img src="img/logo.png" alt="">
+        <a class="header-logo" href="index.html">
+            <img src="img/logo.png" alt="βねおん ロゴ">
         </a>
-        <div class="header-text">
-            <a href="vtuber.html">
-              <p>Vtuberとしての活動</p>
-            </a>
-            <a href="#">
-              <p>声優のお仕事依頼</p>
-            </a>
-        </div>
+
+        <!-- PCナビゲーション -->
+        <nav class="pc-nav" aria-label="メインナビゲーション">
+            <div class="nav-group page-nav">
+                <a href="vtuber.html">VTuberとしての活動</a>
+                <a href="voiceactor.html">声優のお仕事依頼</a>
+            </div>
+            <div class="nav-group section-nav">
+                <a href="#work">宅録声優</a>
+                <a href="#price">料金表</a>
+                <a href="#voice">ボイスサンプル</a>
+                <a href="#portfolio">ポートフォリオ</a>
+                <a href="#link">りんく</a>
+            </div>
+        </nav>
+
+        <!-- スマホ用ハンバーガーボタン -->
+        <button class="hamburger" type="button" aria-label="メニューを開く" aria-controls="mobile-nav" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- スマホナビゲーション -->
+        <nav id="mobile-nav" class="mobile-nav" aria-label="スマホナビゲーション">
+            <a href="vtuber.html">VTuberとしての活動</a>
+            <a href="voiceactor.html">声優のお仕事依頼</a>
+            <a href="#work">宅録声優</a>
+            <a href="#price">料金表</a>
+            <a href="#voice">ボイスサンプル</a>
+            <a href="#portfolio">ポートフォリオ</a>
+            <a href="#link">りんく</a>
+        </nav>
     </header>
     <div class="main">
-        <div class="section">
+        <div class="section" id="work">
           <img src="img/h1-title.png" alt="">
         </div>
         <div class="main-container">
@@ -68,7 +93,7 @@
         </div>
     </div>
 
-    <div class="price">
+    <div class="price" id="price">
         <div class="section">
             <img src="img/h1-price.png" alt="">
         </div>
@@ -289,7 +314,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="section">
             <img src="img/h1-portfolio.png" alt="">
         </div>
@@ -310,7 +335,7 @@
         </ul>
         </div>
     </div>
-    <div class="link-container">
+    <div class="link-container" id="link">
         <div class="section">
             <img src="img/h1-link.png" alt="">
         </div>
@@ -385,5 +410,6 @@
     </div>
 
 <script src="js/voice-sample.js"></script>
+<script src="js/navigation.js" defer></script>
 </body>
 </html>

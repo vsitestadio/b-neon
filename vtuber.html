@@ -12,17 +12,38 @@
 
     <!-- ヘッダー -->
     <header>
-        <a href="index.html">
-            <img src="img/logo.png" alt="">
+        <a class="header-logo" href="index.html">
+            <img src="img/logo.png" alt="βねおん ロゴ">
         </a>
-        <div class="header-text">
-            <a href="#">
-              <p>Vtuberとしての活動</p>
-            </a>
-            <a href="voiceactor.html">
-              <p>声優のお仕事依頼</p>
-            </a>
-        </div>
+
+        <!-- PCナビゲーション -->
+        <nav class="pc-nav" aria-label="メインナビゲーション">
+            <div class="nav-group page-nav">
+                <a href="vtuber.html">VTuberとしての活動</a>
+                <a href="voiceactor.html">声優のお仕事依頼</a>
+            </div>
+            <div class="nav-group section-nav">
+                <a href="#profile">ぷろふぃーる</a>
+                <a href="#schedule">すけじゅーる</a>
+                <a href="#link">りんく</a>
+            </div>
+        </nav>
+
+        <!-- スマホ用ハンバーガーボタン -->
+        <button class="hamburger" type="button" aria-label="メニューを開く" aria-controls="mobile-nav" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- スマホナビゲーション -->
+        <nav id="mobile-nav" class="mobile-nav" aria-label="スマホナビゲーション">
+            <a href="vtuber.html">VTuberとしての活動</a>
+            <a href="voiceactor.html">声優のお仕事依頼</a>
+            <a href="#profile">ぷろふぃーる</a>
+            <a href="#schedule">すけじゅーる</a>
+            <a href="#link">りんく</a>
+        </nav>
     </header>
 
     <!-- キービジュアル -->
@@ -31,9 +52,9 @@
     </div>
 
     <!-- プロフィール -->
-    <div class="profile">
+    <div class="profile" id="profile">
         <div class="section">
-            <img src="img/h1-profile.png" alt="">
+            <img class="first" src="img/h1-profile.png" alt="">
         </div>
         <div class="profile-container">
             <img class="profile-image" src="img/profile-bg.png" alt="">
@@ -48,7 +69,7 @@
     </div>
 
     <!-- スケジュール -->
-    <div class="schedule">
+    <div class="schedule"  id="schedule">
         <div class="section">
             <img src="img/h1-schedule.png" alt="">
         </div>
@@ -95,7 +116,7 @@
         </div>
     </div>
     <!-- リンク -->
-    <div class="link">
+    <div class="link" id="link">
         <div class="section">
             <img src="img/h1-link.png" alt="">
         </div>
@@ -169,5 +190,6 @@
     </ul>
     </div>
     <script src="js/carousel.js" defer></script>
+    <script src="js/navigation.js" defer></script>
 </body>
 </html>
